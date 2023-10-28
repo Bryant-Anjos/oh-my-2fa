@@ -2,13 +2,19 @@
   "name": "oh-my-2fa",
   "module": "src/index.ts",
   "scripts": {
-    "start": "bun run src/index.ts"
+    "start": "bun --watch src/index.tsx"
   },
   "type": "module",
   "devDependencies": {
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
