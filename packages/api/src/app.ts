@@ -8,7 +8,7 @@ const _2FARoutes = new TwoFactorAuthenticationRoutes()
 export default class App {
   constructor(
     private readonly server = new Elysia()
-      .use(swagger())
+      .use(swagger({ path: '/docs', exclude: ['/docs', '/docs/json'] }))
       .use(_2FARoutes.create),
   ) {}
 
