@@ -6,8 +6,8 @@
     "moduleResolution": "bundler",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "composite": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
@@ -17,6 +17,15 @@
     "allowJs": true,
     "types": [
       "bun-types" // add Bun global
-    ]
-  }
+    ],
+    "baseUrl": "./packages",
+    "paths": {
+      "@oh-my-2fa/api": ["api/src"],
+      "@oh-my-2fa/web": ["web/src"],
+      "@oh-my-2fa/*": ["*/src"]
+    }
+  },
+  "references": [
+    { "path": "./packages/api" }
+  ]
 }

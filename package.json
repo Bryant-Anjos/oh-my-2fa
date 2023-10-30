@@ -1,7 +1,8 @@
 {
   "name": "oh-my-2fa",
   "scripts": {
-    "api": "bun run --cwd \"packages/api\" dev"
+    "api": "bun run --cwd \"packages/api\" dev",
+    "web": "bun run --cwd \"packages/web\" dev"
   },
   "workspaces": [
     "packages/*"
