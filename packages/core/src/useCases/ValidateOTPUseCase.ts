@@ -1,7 +1,7 @@
-import { SecretKey, TwoFactorAuthentication } from '@oh-my-2fa/core'
-
 import ValidateOTPDTO from '../DTO/ValidateOTPDTO'
 import UseCase from './UseCase'
+import TwoFactorAuthentication from '../model/2FA'
+import SecretKey from '../model/SecretKey'
 
 export default class ValidateOTPUseCase
   implements UseCase<ValidateOTPDTO, Promise<boolean>>

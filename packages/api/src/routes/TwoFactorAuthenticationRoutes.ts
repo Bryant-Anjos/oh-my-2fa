@@ -1,10 +1,11 @@
 import { Elysia, t } from 'elysia'
 import { rateLimit } from 'elysia-rate-limit'
 
+import {
+  CreateSecretKeyUseCase, GetOTPUseCase, ValidateOTPUseCase,
+} from '@oh-my-2fa/core'
+
 import TwoFactorAuthenticationController from '../controllers/TwoFactorAuthenticationController'
-import CreateSecretKeyUseCase from '../useCases/CreateSecretKeyUseCase'
-import GetOTPUseCase from '../useCases/GetOTPUseCase'
-import ValidateOTPUseCase from '../useCases/ValidateOTPUseCase'
 
 const createSecretKeyUseCase = new CreateSecretKeyUseCase()
 const getOTPUseCase = new GetOTPUseCase()

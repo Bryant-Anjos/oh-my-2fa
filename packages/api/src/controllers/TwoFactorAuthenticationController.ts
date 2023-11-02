@@ -1,6 +1,4 @@
-import GetOTPDTO from '../DTO/GetOTPDTO'
-import ValidateOTPDTO from '../DTO/ValidateOTPDTO'
-import UseCase from '../useCases/UseCase'
+import { GetOTPDTO, UseCase, ValidateOTPDTO } from '@oh-my-2fa/core'
 
 export default class TwoFactorAuthenticationController {
   constructor(
