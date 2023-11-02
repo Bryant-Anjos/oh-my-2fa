@@ -5,8 +5,11 @@ import UseCase from '../useCases/UseCase'
 export default class TwoFactorAuthenticationController {
   constructor(
     private readonly createSecretKeyUseCase: UseCase<void, string>,
-    private readonly getOTPUseCase: UseCase<GetOTPDTO, string>,
-    private readonly validateOTPUseCase: UseCase<ValidateOTPDTO, boolean>,
+    private readonly getOTPUseCase: UseCase<GetOTPDTO, Promise<string>>,
+    private readonly validateOTPUseCase: UseCase<
+      ValidateOTPDTO,
+      Promise<boolean>
+    >,
   ) {}
 
   createSecretKey = () => {
