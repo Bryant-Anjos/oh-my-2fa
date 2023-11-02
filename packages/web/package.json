@@ -3,14 +3,18 @@
   "type": "module",
   "module": "src/index.ts",
   "scripts": {
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bunx --bun vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
     "@elysiajs/eden": "0.7.4",
     "@oh-my-2fa/api": "workspace:*"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@vitejs/plugin-react": "^4.1.0",
+    "bun-types": "latest",
+    "vite": "^4.5.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
