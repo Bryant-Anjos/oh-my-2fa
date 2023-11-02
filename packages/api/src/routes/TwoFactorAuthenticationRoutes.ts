@@ -1,7 +1,7 @@
 import { Elysia, t } from 'elysia'
 import { rateLimit } from 'elysia-rate-limit'
 
-import TwoFactorAuthenticationController from '../controlles/TwoFactorAuthenticationController'
+import TwoFactorAuthenticationController from '../controllers/TwoFactorAuthenticationController'
 import CreateSecretKeyUseCase from '../useCases/CreateSecretKeyUseCase'
 import GetOTPUseCase from '../useCases/GetOTPUseCase'
 import ValidateOTPUseCase from '../useCases/ValidateOTPUseCase'

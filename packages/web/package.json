@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "@elysiajs/eden": "0.7.4",
-    "@oh-my-2fa/api": "workspace:*"
+    "@oh-my-2fa/api": "workspace:*",
+    "@oh-my-2fa/core": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.1.0",

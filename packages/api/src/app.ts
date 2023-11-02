@@ -10,7 +10,7 @@ export default class App {
   constructor(
     private readonly server = new Elysia()
       .use(cors())
-      .use(swagger({ path: '/docs', exclude: ['/docs', '/docs/json'] }))
+      .use(swagger({ path: '/docs', exclude: ['/', '/docs', '/docs/json'] }))
       .use(_2FARoutes.create),
   ) {}
 

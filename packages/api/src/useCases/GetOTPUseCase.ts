@@ -1,6 +1,6 @@
+import { SecretKey, TwoFactorAuthentication } from '@oh-my-2fa/core'
+
 import GetOTPDTO from '../DTO/GetOTPDTO'
-import TwoFactorAuthentication from '../model/2FA'
-import SecretKey from '../model/SecretKey'
 import UseCase from './UseCase'
 
 export default class GetOTPUseCase implements UseCase<GetOTPDTO, string> {

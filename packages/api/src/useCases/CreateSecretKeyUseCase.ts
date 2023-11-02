@@ -1,5 +1,6 @@
+import { SecretKey } from '@oh-my-2fa/core'
+
 import UseCase from './UseCase'
-import SecretKey from '../model/SecretKey'
 
 export default class CreateSecretKeyUseCase implements UseCase<void, string> {
   execute() {
