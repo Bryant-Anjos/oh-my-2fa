@@ -1,4 +1,4 @@
 @react.component
 let make = () => {
-  <h1> {"From Rescript"->React.string} </h1>
+  <p className="text-3xl font-bold text-red-500"> {"From Rescript"->React.string} </p>
 }
